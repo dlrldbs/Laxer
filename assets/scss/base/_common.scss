@@ -1,0 +1,190 @@
+.blind{
+    position: absolute;
+    width: 1px;height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+}
+
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    mix-blend-mode: difference;
+  }
+
+.round{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+}
+
+.round2 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #1f1f1f;
+}
+.group-content{
+    .title-area{
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        .titletext{
+            font-size: 6.25rem;
+        }
+        .round{
+            width: 25px;
+            height: 25px;
+        }
+        &.beige{
+            position: relative;
+            background-color: rgb(235 234 228);
+            margin-bottom: -100px;
+        }
+        &.pink{
+            position: relative;
+            background-color: rgb(243 135 200);
+            margin-bottom: -100px;
+        }
+        &.gray{
+            position: relative;
+            background-color: rgb(145 149 152);
+        }
+    }
+}
+
+.btn-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btnshaped{
+        cursor: pointer;
+        display: inline-block;
+        background-color: #1f1f1f;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        border-radius: 50px;
+        box-shadow: inset 0 0 0 1px transparent;
+        .btn-txt{
+            height: 1rem;
+            overflow: hidden;
+        }
+        span {
+            display: block;
+            position: relative;
+            color: #ffffff;
+            overflow: hidden;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+        &:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        &:hover {
+            transform: scale(1.1);
+          
+            span{
+                transform: translateY(-100%);
+            }
+        }
+    }
+}
+
+.btn-area2{
+    display: flex;
+    align-items: center;
+    .btnshaped{
+        cursor: pointer;
+        display: inline-block;
+        background-color: #1f1f1f;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        border-radius: 50px;
+        box-shadow: inset 0 0 0 1px transparent;
+        .btn-txt{
+            height: 1rem;
+            overflow: hidden;
+        }
+            span {
+                display: block;
+                position: relative;
+                color: #ffffff;
+                //overflow: hidden;
+                transition: 0.3s;
+                font-size: 1rem;
+            }
+            &:nth-child(2) {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+            }
+        
+        &:hover {
+            transform: scale(1.1);
+            
+            span{
+                transform: translateY(-100%);
+            }
+        }
+    }
+}
+.title-inner{
+    padding: 0 30px;
+    padding-top: 40px;
+    .group-title{
+        background-color: rgb(235 234 228);
+        display: flex;
+        font-size: 3.125rem;
+        padding-bottom: 70px;
+        border-bottom: 9px solid #1F1F1F;
+        .title-left{
+            flex: 1;
+            .titlenum{
+                display: inline-block;
+                padding: 0 25px 25px 0;
+                position: relative;
+                .bg{
+                    position: absolute;
+                    top: 0;left: 0;
+                    right: 0;bottom: 0;
+                    background: #fff;
+                    pointer-events: none;
+                }
+                span{
+                    display: block;
+                    position: relative;
+                }
+            }
+        }
+        .title-right{
+            flex: 1;
+            position: relative;overflow: hidden;
+            .bg{
+                position: absolute;
+                top: 0;left: 0;
+                right: 0;bottom: 0;
+                background: #fff;
+                pointer-events: none;
+            }
+            .titletext{
+                position: relative;
+                padding: 0 0 25px 25px;  
+                z-index: 2; 
+            }
+        }
+    }
+}
