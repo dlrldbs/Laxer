@@ -63,6 +63,7 @@ input {
 }
 
 body {
+  background: #fff;
   font-family: "Montserrat", "Noto Sans KR", sans-serif;
   color: #1F1F1F;
   letter-spacing: -0.025em;
